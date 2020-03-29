@@ -1,3 +1,9 @@
+import React from 'react'; 
+
 export default function App() {
-  return 'Hello David'; 
+  return (
+    <h1 className="bg-primary text-white text-center p-2">
+      Hello David
+    </h1>
+  ); 
 }
