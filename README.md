@@ -16,3 +16,4 @@
 
 - Defines props in Parent Component
 - Receives props in Child Component
+- Selectively render content in Child Component
