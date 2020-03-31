@@ -19,3 +19,4 @@
 - Selectively renders content in child component
 - Renders arrays
 - Renders multiple elements
+- Renders no content
