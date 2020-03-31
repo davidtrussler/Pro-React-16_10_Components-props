@@ -1,15 +1,11 @@
 import React from 'react'; 
 
 export default function Summary(props) {
-  return (
-    <h4 className="bg-info text-white text-center p-2">
-			{
-				props.names.map(name => 
-					<div key={name}>
-						{`${name} contains ${name.length} letters`}
-					</div>
-				)
-			}
-    </h4>
-  ); 
+	return (
+		<React.Fragment>  	
+			<td>{props.index + 1}</td>
+			<td>{props.name}</td>
+			<td>{props.name.length}</td>
+		</React.Fragment>
+	); 
 }
