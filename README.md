@@ -15,3 +15,4 @@
 ### 3. [Understanding Props](https://github.com/davidtrussler/Pro-React-16_10_Components-props)
 
 - Defines props in Parent Component
+- Receives props in Child Component
