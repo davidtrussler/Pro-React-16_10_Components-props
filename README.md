@@ -14,7 +14,8 @@
 
 ### 3. [Understanding Props](https://github.com/davidtrussler/Pro-React-16_10_Components-props)
 
-- Defines props in Parent Component
-- Receives props in Child Component
-- Selectively render content in Child Component
-- Rendering arrays
+- Defines props in parent component
+- Receives props in child component
+- Selectively renders content in child component
+- Renders arrays
+- Renders multiple elements
