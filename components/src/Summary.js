@@ -1,9 +1,15 @@
 import React from 'react'; 
 
-export default function Summary() {
+export default function Summary(props) {
   return (
     <h4 className="bg-info text-white text-center p-2">
-      This is a summary
+			{
+				props.names.map(name => 
+					<div key={name}>
+						{`${name} contains ${name.length} letters`}
+					</div>
+				)
+			}
     </h4>
   ); 
 }
