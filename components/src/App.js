@@ -9,9 +9,14 @@ function reverseNames() {
 	ReactDOM.render(<App />, document.getElementById('root')); 
 }
 
+function promoteName(name) {
+	names = [name, ...names.filter(val => val !== name)]; 
+	ReactDOM.render(<App />, document.getElementById('root')); 
+}
+
 export default function App() {
 return (
-	<table>
+	<table className="table table-sm table-striped">
 		<thead>
 			<tr>
 				<th>#</th>
@@ -23,7 +28,12 @@ return (
 			{
 				names.map((name, index) => 
 					<tr key={name}>
-						<Summary index={index} name={name} reverseCallback={reverseNames}/>
+						<Summary 
+							index={index} 
+							name={name} 
+							reverseCallback={reverseNames}
+							promoteCallback= {promoteName}
+						/>
 					</tr>
 				)
 			}
