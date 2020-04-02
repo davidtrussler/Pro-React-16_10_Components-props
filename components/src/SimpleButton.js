@@ -6,6 +6,7 @@ export function SimpleButton(props) {
 		<button 
 			className={props.className}
 			onClick={props.callback}
+			disabled={props.disabled === 'true' || props.disabled === true}
 		>{props.text}</button>
 	)
 }
@@ -18,5 +19,5 @@ SimpleButton.propTypes = {
 	text: PropTypes.string, 
 	theme: PropTypes.string, 
 	callback: PropTypes.func, 
-	disabled: PropTypes.bool
+	disabled: PropTypes.oneOfType([PropTypes.bool, PropTypes.string])
 }
