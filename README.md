@@ -32,3 +32,7 @@
 
 - Uses props to abstract specific components to generic ones
 - Passes on all props to child component via destructuring operator
+
+### 7. [Default prop values]()
+
+- Defines set of default prop values
